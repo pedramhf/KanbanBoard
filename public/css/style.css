@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #c1ae8d;
+  position: relative;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.red {
+  background-color: #c67052 !important;
+}
+.green {
+  background-color: #849271 !important;
+  color: #ffffff;
+}
+.yellow {
+  background-color: #cf9546 !important;
+}
+.main {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+.todo,
+.done {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 0.1rem 0.5rem;
+}
+.progress {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  text-align: center;
+  margin: 0 0.1rem;
+}
+.title {
+  background-color: #4b6892;
+  color: #ffffff;
+  padding: 0.4rem;
+  margin: 0.1rem 0;
+  text-align: center !important;
+  width: 100%;
+  border-radius: 0.3rem 0.1rem;
+}
+
+.subProgress {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-height: 25rem;
+  overflow-y: scroll;
+
+  min-height: 25rem !important;
+}
+.subTask {
+  width: 50%;
+  padding: 0.2rem;
+  margin: 0 0.1rem;
+  border-radius: 0.3rem;
+}
+.subTitle {
+  background-color: #f6bd28;
+  color: #444;
+  width: 100%;
+  border-radius: 0.3rem;
+}
+.task {
+  width: 10rem;
+  height: 10rem;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 0.3rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  margin: 0.3rem;
+}
+
+.newTask {
+  width: 100% !important;
+  text-align: center;
+}
+.newTask button {
+  background-color: #8b842f !important;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1.2rem;
+}
+.newTask input::placeholder {
+  color: #f0eded;
+  font-family: "Quicksand", sans-serif;
+}
+.newTask .inputTitle {
+  color: #fcf7f7 !important;
+  width: 100%;
+  padding: 1rem;
+  background-color: #be4c46;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 0.3rem;
+}
+.newTask .inputBody {
+  width: 100%;
+  padding: 1rem;
+  height: 5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+.taskContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.task p {
+  padding: 0.5rem;
+  text-decoration-line: underline;
+  line-height: 1.6rem;
+  text-align: center;
+}
