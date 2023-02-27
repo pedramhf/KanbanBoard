@@ -91,6 +91,7 @@ body {
 .newTask {
   width: 100% !important;
   text-align: center;
+  overflow-y: unset;
 }
 .newTask button {
   background-color: #8b842f !important;
